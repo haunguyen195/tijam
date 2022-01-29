@@ -6,7 +6,7 @@ export const STRING={
   EMAIL:'Tranbaphuc1999@gmail.com',
   MAIL_TO:"mailto:tranbaphuc1999@gmail.com",
   NAME:"ZipEnter",
-  GITHUB_LINK:"https://github.com/phuctranba/naoX-mobile-app"
+  GITHUB_LINK:"https://github.com/phuctranba/tijam"
 }
 
 export const IMAGE={

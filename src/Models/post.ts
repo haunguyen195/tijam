@@ -1,4 +1,4 @@
-import { GENDER, TYPE } from "../Utils/Values";
+import { TYPE } from "../Utils/Values";
 
 export class Post {
   id?: string;
@@ -17,5 +17,5 @@ export class Post {
   nickname?: string;
   create_ts?: Date;
 
-  distance?:number
+  distance?: number;
 }
