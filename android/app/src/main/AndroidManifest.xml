@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.tijam_mobile">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+            android:name=".MainApplication"
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_tijam"
+            android:roundIcon="@mipmap/ic_tijam_round"
+            android:allowBackup="false"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+
+        <activity
+                android:exported="true"
+                android:name=".SplashActivity"
+                android:theme="@style/SplashTheme"
+                android:screenOrientation="portrait"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+                android:launchMode="singleTask"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+                android:screenOrientation="portrait"
+                android:exported="true">
+        </activity>
+
+        <!-- You will only need to add this meta-data tag, but make sure it's a child of application -->
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyDlvCnLEY6LK8L047D3_yYmikxzzIY-_RU"/>
+
+        <!-- You will also only need to add this uses-library tag -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_notification" />
+        <meta-data
+                tools:replace="android:resource"
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/notification" />
+    </application>
+</manifest>
