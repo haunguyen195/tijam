@@ -23,7 +23,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-
+googleservices.json
 # Android/IntelliJ
 #
 build/
