@@ -9,6 +9,20 @@ If you're interested in source code or want to develop Tijam, try it. I'm happy 
 ## Video demo
 [![Tijam](https://yt-embed.herokuapp.com/embed?v=b5mQhJWq_YI)](https://www.youtube.com/watch?v=b5mQhJWq_YI "Tijam")
 
+## Structure of Firestore DB
+    .
+    ├── Feedbacks
+    ├── Posts
+    ├── Statistics
+    ├── UserLites
+    └── Users
+    
+## Structure of Storage
+    .
+    └── images
+        ├── avatars
+        ├── thumbnails
+        └── posts 
 
 ## Development team
 * [Phuc Tran Ba](https://github.com/phuctranba)
